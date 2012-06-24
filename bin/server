@@ -1,11 +1,13 @@
 var httpServer = require('http-server').HTTPServer,
-	serveFrom = process.cwd() + '/public';
+	serveFrom = process.cwd() + '/public',
+	servePort = 8080;
 
 var server = new httpServer({root: serveFrom});
 
-server.listen(8080);
-console.log('http-server started at port 8080'.green);
-console.log('Serving from: ' + serveFrom);
+server.listen(servePort);
+var serveString = 'http-server started at http://localhost:' + servePort;
+console.log(serveString.green);
+console.log('serving from: ' + serveFrom);
 
 process.on('SIGINT', function() {
   console.log('');
