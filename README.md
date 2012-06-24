@@ -11,7 +11,7 @@ Download/clone this repo, then run
 
 	npm install
 
-Now you can test it out by running
+Now you can start the server by running
 
 	npm start
 
