@@ -1,0 +1,13 @@
+{
+	"name": "node-http-server-boilerplate",
+	"version": "0.0.1",
+	"scripts": {
+		"start": "node bin/server"
+	},
+	"engines": {
+		"node": "0.6.x"
+	},
+	"dependencies": {
+		"http-server": "*"
+	}
+}

@@ -1,0 +1,14 @@
+var httpServer = require('http-server').HTTPServer,
+	serveFrom = process.cwd() + '/public';
+
+var server = new httpServer({root: serveFrom});
+
+server.listen(8080);
+console.log('http-server started at port 8080'.green);
+console.log('Serving from: ' + serveFrom);
+
+process.on('SIGINT', function() {
+  console.log('');
+  console.log('http-server stopped.'.red);
+  return process.exit();
+});
