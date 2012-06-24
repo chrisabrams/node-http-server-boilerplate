@@ -24,4 +24,4 @@ If you want to change the loading path, open up ./bin/server and change
 
 If you want to change the port, just change
 
-	servePort = 
+	servePort = port#
